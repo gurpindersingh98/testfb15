@@ -1,0 +1,262 @@
+/* Basic Styling */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+
+/* Columns */
+.left-column {
+  width: 50%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 50%;
+  margin-top: 30px;
+}
+
+/* Left Column */
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+ 
+.left-column img.active {
+  opacity: 1;
+}
+
+/* Product Description */
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 48px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+
+.product-description h3 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+/* Cable Configuration */
+.store-choose {
+  margin-bottom: 15px;
+}
+ 
+.store-choose button {
+  margin-top: 15px;
+  border: 2px solid #E1E8EE;
+  border-radius: 6px;
+  padding: 15px 25px;
+  font-size: 14px;
+  color: #5E6977;
+  background-color: #fff;
+  cursor: pointer;
+}
+ 
+.store-choose button:hover,
+.store-choose button:active,
+.store-choose button:focus {
+  border: 2px solid #86939E;
+  outline: none;
+}
+ 
+.product-config {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+ 
+.product-config a {
+  color: #358ED7;
+  text-decoration: none;
+  font-size: 12px;
+  position: relative;
+  margin: 10px 0;
+  display: inline-block;
+}
+.product-config a:before {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(53, 142, 215, 0.5);
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+/* Product Price */
+.product-price {
+  display: flex;
+  align-items: center;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+ 
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+/*HEADER*/
+
+#container1 {
+  height: 80px;
+  width: 100vw;
+  text-align:center;
+  background-color: lightgreen;
+  font-size: 8pt;
+ 
+}
+
+.box1 {
+  background-color: lightgreen;
+  width: 20vw;
+  height: 80px;
+  vertical-align: top;
+  display: inline-block;  
+}
+
+.box2 {
+  background-color: lightgreen;
+  width: 60vw;
+  height: 80px;
+  vertical-align: top;
+  display: inline-block;  
+}
+
+ .box3 {
+  background-color: lightgreen;
+  width: 7vw;
+  height: 80px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+      
+}
+ .box4 {
+  background-color: lightgreen;
+  width: 12vw;
+  height: 80px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: left;
+      
+}
+
+ .box1 p{
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: auto;
+  margin-top: 15px;
+}
+.box2 p{
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+ .box3 p{
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: auto;
+  margin-top: 20px;
+}
+ 
+.dropbtn {
+  background-color:lightgreen;
+  color: ;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+ .Cartbutton {
+  background-color:lightgreen;
+  color: ;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  display: inline-block;
+}
+
+.Cart {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
