@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="checkout.css" />
+    <title>Checkout</title>
+  </head>
+
+  <body>
+
+  <!-- HEADER -->
+    <div id="container1">
+        <div class="box1">
+          <p>
+            <img alt="logo" src="Screenshot_39.png"/>  
+          </p>
+          </div> 
+          <div class="box2">      
+            <p>
+              <form action="/action_page.php">
+                <input type="search" id="search" name="name" placeholder="Search" autofocus="autofocus"/>
+            </p>
+          </div>
+          <div class="box3">
+            <div class="dropdown">
+              <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                  <a href="#">My account</a>
+                  <a href="#">Location</a>
+                  <a href="#">Setting</a>
+                </div>     
+            </div>
+          </div>
+          <div class="box4">
+            <div class="Cart">
+              <button class="Cartbutton">Cart</button>
+            </div>
+          </div>
+      </div>
+
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Harry Potter">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="harrypotter@bcit.ca">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="3700 Willingdon Ave">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="Vancouver">
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">Province</label>
+                    <input type="text" id="state" name="Province" placeholder="BC">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Postal Code</label>
+                    <input type="text" id="zip" name="zip" placeholder="V5G 3H2">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Cardholder Name</label>
+                <input type="text" id="cname" name="cardname" placeholder="Harry Potter">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="January">
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2019">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+
+      <div class="col-25">
+        <div class="container">
+          <h4>Cart 
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i> 
+              <b>4</b>
+            </span>
+          </h4>
+          <p><a href="#">Apples</a> <span class="price">$10</span></p>
+          <p><a href="#">Tomato</a> <span class="price">$20</span></p>
+          <p><a href="#">Lettuce</a> <span class="price">$13</span></p>
+          <p><a href="#">Grapes</a> <span class="price">$16</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>$270</b></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
