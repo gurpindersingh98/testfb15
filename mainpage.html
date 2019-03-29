@@ -3,139 +3,168 @@
 	<head>
 		<title>FoodSave Main Page</title>
 		<style>
+			/*body css*/
 			body {
-         font-family: 'Hind', sans-serif;
-         background-color: aliceblue;
-      }
-      #container1 {
-        height: 80px;
-        width: 100vw;
-        text-align:center;
-        background-color: lightgreen;
-        font-size: 8pt;
+         		font-family: 'Hind', sans-serif;
+         		background-color: aliceblue;
+                font-size: 18px;
+      		}
+			/***************************header******************************/
+			#container1 {
+				height: 80px;
+        		width: 100vw;
+       			text-align:center;
+        		background-color: #739d39;
+        		font-size: 8pt;
+                
        
-      }
-			#container2 {
-				height: 85px;
-				width: 100vw;
-				background-color: lightgreen;
+      		}
+			
+      		.box1 {
+        		background-color: #739d39;
+        		width: 20vw;
+        		height: 80px;
+        		vertical-align: top;
+       			display: inline-block;
+                
+			}
+            
+      
+      		.box2 {
+        		background-color: #739d39;
+        		width: 60vw;
+        		height: 80px;
+        		vertical-align: top;
+        		display: inline-block;  
+      		}
+      
+       		.box3 {
+        		background-color: #739d39;
+        		width: 7vw;
+        		height: 80px;
+        		vertical-align: top;
+        		display: inline-block;
+        		text-align: left;
+            
+      		}
+			
+       		.box4 {
+        		background-color: #739d39;
+        		width: 12vw;
+        		height: 80px;
+        		vertical-align: top;
+        		display: inline-block;
+        		text-align: left;  
 			}
 
-      .box1 {
-        background-color: lightgreen;
-        width: 20vw;
-        height: 80px;
-        vertical-align: top;
-        display: inline-block;  
-      }
-      
-      .box2 {
-        background-color: lightgreen;
-        width: 60vw;
-        height: 80px;
-        vertical-align: top;
-        display: inline-block;  
-      }
-      
-       .box3 {
-        background-color: lightgreen;
-        width: 7vw;
-        height: 80px;
-        vertical-align: top;
-        display: inline-block;
-        text-align: left;
+       		.box1 p{
+				margin-left: auto;
+        		margin-right:auto;
+        		margin-bottom: auto;
+        		margin-top: 15px;
+      		}
+			
+      		.box2 p{
+        		margin-left: auto;
+        		margin-right:auto;
+				margin-bottom: auto;
+				margin-top: 20px;
+			}
+			
+       		.box3 p{
+				margin-left: auto;
+				margin-right:auto;
+				margin-bottom: auto;
+				margin-top: 20px;
+			}
+       		/**********************************menu 1 ends********************/
             
-      }
-       .box4 {
-        background-color: lightgreen;
-        width: 12vw;
-        height: 80px;
-        vertical-align: top;
-        display: inline-block;
-        text-align: left;
+            /************************footer***************/
+            /*container 2*/
+            #container2 { 
+                height: 100px;
+        		width: 100%;
+        		background-color: #739d39;
+        		font-size: 8pt;    
+            }
+            table, td {
+                text-align: center;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+            table, td:hover {
+                background-color: #fcfad3;
+            }
+        
+            /**********************footer ends*****************/
             
-      }
+			/**car menyu dropdown*/
+     		.dropbtn {
+				background-color:#739d39;
+				color: ;
+				padding: 12px;
+				font-size: 16px;
+				border: none;
+				display: inline-block;
+			}
 
-       .box1 p{
-        margin-left: auto;
-        margin-right:auto;
-        margin-bottom: auto;
-        margin-top: 15px;
-      }
-      .box2 p{
-        margin-left: auto;
-        margin-right:auto;
-        margin-bottom: auto;
-        margin-top: 20px;
-      }
-       .box3 p{
-        margin-left: auto;
-        margin-right:auto;
-        margin-bottom: auto;
-        margin-top: 20px;
-      }
-       
-     .dropbtn {
-        background-color:lightgreen;
-        color: ;
-        padding: 12px;
-        font-size: 12px;
-        border: none;
-        display: inline-block;
-      }
+			.dropdown {
+				position: relative;
+				display: inline-block;
+				margin-top: 20px;
+			}
 
-      .dropdown {
-        position: relative;
-        display: inline-block;
-        margin-top: 20px;
-      }
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f1f1f1;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
 
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
+			.dropdown-content a {
+                font-size: 16px;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
 
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+			.dropdown-content a:hover {background-color: #ddd;}
 
-      .dropdown-content a:hover {background-color: #ddd;}
+			.dropdown:hover .dropdown-content {display: block;}
 
-      .dropdown:hover .dropdown-content {display: block;}
-
-      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+			.dropdown:hover .dropbtn {background-color: #3e8e41;}
       
-       .Cartbutton {
-        background-color:lightgreen;
-        color: ;
-        padding: 12px;
-        font-size: 12px;
-        border: none;
-        display: inline-block;
-      }
+			.Cartbutton {
+				background-color:#739d39;
+				color: ;
+				padding: 12px;
+				font-size: 16px;
+				border: none;
+				display: inline-block;
+			}
 
-      .Cart {
-        position: relative;
-        display: inline-block;
-        margin-top: 20px;
-      }
+			.Cart {
+				position: relative;
+				display: inline-block;
+				margin-top: 20px;
+			}
+			/**car meny ends*/
+			
+			/**vertical menu hover and actives*/
 			.vertical-menu{
 				width: 600px;
-				position: center;
 				margin-top: 150px;
-				margin-left: auto;
-				margin-right: auto;
-				margin-bottom: 150px
+				margin-left: 100px;
+				margin-right: 0px;
+				margin-bottom: 150px;
+                float: left;
+                display: inline-block;
 			}
 			.vertical-menu a{
-				background-color: #eee;
+				background-color: #fcfad3;
 				color: black;
 				display: block;
 				padding: 12px;
@@ -146,56 +175,91 @@
 				background-color: #ccc;
 			}
 			.vertical-menu a.active {
-				background-color: lightgreen;
+				background-color: #c6e377;
 				color: white;
 			}
-			#text1 {
+			/**vertical menu css ends------------*/
+			
+            /**vertical menu 2 hover and actives*/
+			.vertical-menu2{
+				width: 600px;
+				margin-top: 150px;
+				margin-left: auto;
+				margin-right: 100px;
+				margin-bottom: 150px;
+                
+                
+			}
+			.vertical-menu2 a{
+				background-color: #fcfad3;
+				color: black;
+				display: block;
+				padding: 12px;
+				text-decoration: none;
 				text-align: center;
 			}
-			#text2 {
-				text-align: center;
+			.vertical-menu2 a:hover {
+				background-color: #ccc;
 			}
-			#text3 {
-				text-align: center;
+			.vertical-menu2 a.active {
+				background-color: #c6e377;
+				color: white;
 			}
+			/**vertical menu 2 css ends------------*/
+			
+	
+			
 		
 		</style>
 	</head>
 	<body>
-		   <div id="container1">
-     <div class="box1">
-       <p>
-        <img alt="" src="Screenshot_39.png"/>  
-       </p>
-      </div> 
-      <div class="box2">      
-        <p>
-          <form action="/action_page.php">
-            <input type="search" id="search" name="name" placeholder="Search" autofocus="autofocus"/>
-         </p>
-      </div>
-      <div class="box3">
-        <div class="dropdown">
-          <button class="dropbtn">Account</button>
-            <div class="dropdown-content">
-              <a href="#">My account</a>
-              <a href="#">Location</a>
-              <a href="#">Setting</a>
-            </div>     
-        </div>
-      </div>
-      <div class="box4">
-        <div class="Cart">
-          <button class="Cartbutton">Cart</button>
-        </div>
-      </div>
-   </div> 
-   <script>
-     document.getElementById('search').style.height="35px";
-     document.getElementById('search').style.width="350px";
-     document.getElementById('search').style.fontSize="14pt";
-    </script>
-	  
+		<!------------------------------------------Container 1 menu------------------------------->
+		<div id="container1">
+			<!-----------------box1------------------->
+     		<div class="box1">
+       			<p>
+        			<img alt="Foodsave" src="Screenshot_28.png" width="25%" height="25%"/>  
+       			</p>
+			</div> 
+			
+			<!---------------------box2---------------->
+			<div class="box2">      
+				<p>
+					<form action="/action_page.php">
+						<input type="search" id="search" name="name" placeholder="Search" autofocus="autofocus"/>
+					</form>
+			</div>
+			
+			<!---------------------------box3------------->
+      		<div class="box3">
+				<div class="dropdown">
+					<button class="dropbtn">Account</button>
+					<div class="dropdown-content">
+						<a href="#">My account</a>
+						<a href="#">Location</a>
+						<a href="#">Setting</a>
+                        <a href="#">Logout</a>
+					</div>     
+        		</div>
+      		</div>
+			<!------------------------box4--------------------->
+      		<div class="box4">
+        		<div class="Cart">
+					<button class="Cartbutton">Cart</button>
+        		</div>
+      		</div>
+   		</div>
+		<!---------------------------------------------Container 1 menu ends----------------------->
+		
+		<!---------------------------------------------Javascript starts--------------------------->
+   		<script>
+			document.getElementById('search').style.height="35px";
+     		document.getElementById('search').style.width="350px";
+     		document.getElementById('search').style.fontSize="14pt";
+    	</script>
+		<!---------------------------------------------Javascript ends--------------------------->
+	  	
+		<!---------------------------------------------main menu 1------------------------------->
 		<div class="vertical-menu">
   			<a href="#" class="active">Popular</a>
   			<a href="#">Apples </a>
@@ -203,11 +267,30 @@
   			<a href="#">Bananas</a>
   			<a href="#">Watermelons</a>
 		</div>
-		<div id = "container2">
-			<p id = "text1">About us</p>
-			<p id = "text2">How it works</p>
-			<p id = "text3">Contact us</p>
+		<!-----------------------------------------menu ends here--------------------------------->
+		
+        <!-----------------------------------------main menu 2 here------------------------------->
+        <div class="vertical-menu2">
+  			<a href="#" class="active">Sales</a>
+  			<a href="#">Jasmine Rice</a>
+  			<a href="#">Potatoes(5lb)</a>
+  			<a href="#">Organic Milk</a>
+  			<a href="#">Eggplants</a>
 		</div>
+        <!-----------------------------------------main menu 2 ends here-------------------------->
+		<!-----------------------------------------footer table----------------------------------->
+		<table align = "center" id = "container2">
+			<tr>
+				<td href="about us">About us</td>
+			</tr>
+			<tr>
+				<td href = "how it works">How it works</td>
+			</tr>
+			<tr>
+				<td href = "contact us">Contact us</td>			
+			</tr>
+		</table>
+		<!------------------------------------footer table ends here------------------------------>
 		
 	</body>
 </html>
