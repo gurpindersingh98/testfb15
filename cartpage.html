@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title> cartpage</title>
+    <meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Hind);
+		
+      body {
+        font-family: 'Hind', sans-serif;
+		background-color: #C6E377;
+		font-size: 17px;
+		
+      }	
+		.grid-container {
+		  display: grid;
+		  grid-template-columns: auto auto auto auto auto auto;
+		  background-color:  #C6E377;
+		  font-size:17px;
+		}
+
+		.grid-container > div {
+		  background-color: #C6E377;
+		  text-align: left;
+		  padding: 20px 0;
+		  font-size: 17px;
+		}
+
+		#item1 {
+		  grid-column-start: 1;
+		  grid-column-end: 3;
+		  background-color: #729D39;
+		  text-align: center;
+		}
+		#item2 {
+		  grid-column-start: 3;
+		  grid-column-end:5;
+		  background-color: #729D39;
+		  text-align: center;
+		}
+		#item3 {
+		  background-color: #729D39;
+		  text-align: center;
+		}
+		#item4 {
+		 background-color: #729D39;
+		 text-align: left;
+		}
+		.item5 {
+		  grid-column-start: 1;
+		  grid-column-end: 3;
+		}
+		#item8 {
+		  grid-column-start: 5;
+		  grid-column-end: 7;
+		  background-color: #FBFAD3;
+		  text-align: center;
+		}
+		.item9 {
+		  grid-column-start: 1;
+		  grid-column-end: 5;
+		}
+		#item10 {
+		  grid-column-start: 5;
+		  grid-column-end: 7;
+		  background-color: #FBFAD3;
+		  text-align: center;
+		}
+		#item15 {
+		  grid-column-start: 5;
+		  grid-column-end: 7;
+		  background-color: #FBFAD3;
+		  text-align: center;
+		}
+		#item20 {
+		  grid-column-start: 5;
+		  grid-column-end: 7;
+		  grid-row-start: 5;
+		  grid-row-end: 10;
+		  background-color: #FBFAD3;
+		  text-align: center;
+		}
+		.item21 {
+		  grid-column-start: 1;
+		  grid-column-end: 5;
+		}
+		#item30 {
+		  grid-column-start: 1;
+		  grid-column-end: 7;
+		  background-color: #36622B;
+		  text-align: center;
+		}
+		
+		 .dropbtn {
+        background-color:#729D39;
+        padding: px;
+        font-size: 15px;
+		border: none;
+        text-align: center;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #C6E377;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-content {display: block;}
+
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      
+
+	  .vertical-menu{
+		width: 600px;
+		position: center;
+		margin-top: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 150px
+		}
+	  .vertical-menu a{
+		background-color: #eee;
+		color: black;
+		display: block;
+		padding: 12px;
+		text-decoration: none;
+		text-align: center;
+		}
+	  .vertical-menu a:hover {
+		background-color: #ccc;
+		}
+	  .vertical-menu a.active {
+		background-color: lightgreen;
+		color: white;
+		}
+		
+	  .Cartbutton {
+        background-color:#729D39;
+        padding: 12px;
+        font-size: 17px;
+        border: none;  
+	 }
+      .Cart {
+        position: relative;
+        display: inline-block;
+        margin-top: 15px;
+      }
+	   .footer {
+        background-color:#36622B;
+        font-size: 17px;
+        border: none;  
+	 }
+	
+	</style>
+  </head>
+  <body>
+	<div class="grid-container">
+  <div id="item1">
+	  <img alt="" src="Screenshot_39.png"/>  
+  </div>
+  <div id="item2">
+	  <form action="/action_page.php">
+        <input type="search" id="search" name="name" placeholder="Search" autofocus="autofocus"/>
+	  </form>
+  </div>
+  <div id="item3">
+    <div class="dropdown">
+       <button class="dropbtn">Account</button>
+       <div class="dropdown-content">
+         <a href="#">My account</a>
+         <a href="#">Location</a>
+         <a href="#">Setting</a>
+       </div>   
+	</div>	
+  </div>	     
+
+  <div id="item4">
+  <div class="Cart">
+       <button class="Cartbutton">Cart</button>
+  </div>
+
+  </div>
+  <div class="item5">Shopping Cart</div>
+  <div class="item6">Price</div>
+  <div class="item7">Quantity</div>
+  <div id="item8">Subtotal</div> 
+  <div class="item9">Costco</div>
+  <div id="item10">$45</div>
+  <div class="item11">
+  	 <img id ="image1" src="Screenshot_2.png" alt="" >
+  </div>  
+  <div class="item12">apple</div>
+  <div class="item13">$4</div>
+  <div class="item14">3</div>
+  <div id="item15">
+ </div>
+  <div class="item16">
+	 <img id ="image2" src="Screenshot_3.png" alt="" >
+  </div>
+  <div class="item17">Tomato</div>
+  <div class="item18">$4</div> 
+  <div class="item19">4</div>
+  <div id="item20">
+	 <div class="Cart">
+       <button class="Cartbutton">Checkout</button>
+	  </div>
+		</div>
+  <div class="item21">Walmart</div>
+  <div class="item22">
+	<img id ="image1" src="Screenshot_4.png" alt="" >
+  </div>  
+  <div class="item23">Lettuce</div>
+  <div class="item24">$3</div>
+  <div class="item25">2</div>
+  <div class="item26">
+	<img id ="image1" src="Screenshot_5.png" alt="" >
+	</div>
+  <div class="item27">Grape</div>
+  <div class="item28">$5.5</div>
+  <div class="item29">2</div>
+  <div id="item30">
+    <div class="footer">
+       <button class="footer">About Us</button>
+    </div>
+	<div class="footer">
+       <button class="footer">How it Works</button>
+    </div>
+	 <div class="footer">
+       <button class="footer">Contact</button>
+    </div> 
+  </div>
+</div>
+
+ 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ 	
+<script>
+  document.getElementById('search').style.height="40px";
+  document.getElementById('search').style.width="400px";
+  document.getElementById('search').style.fontSize="14pt";
+</script>
+ 
+  </body>
+</html>
