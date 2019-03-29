@@ -5,6 +5,126 @@ html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+/*--------------header code------*/
+#container1 {
+	height: 80px;
+    width: 100vw;
+    text-align:center;
+    background-color: #739d39;
+    font-size: 8pt;
+                
+}
+			
+.box1 {
+    background-color: #739d39;
+    width: 20vw;
+    height: 80px;
+    vertical-align: top;
+    display: inline-block;
+                
+}
+             
+.box2 {
+    background-color: #739d39;
+    width: 60vw;
+    height: 80px;
+    vertical-align: top;
+    display: inline-block;  
+}
+.box3 {
+  	background-color: #739d39;
+    width: 7vw;
+    height: 80px;
+   	vertical-align: top;
+    display: inline-block;
+    text-align: left;
+}
+			
+.box4 {
+     background-color: #739d39;
+     width: 12vw;
+     height: 80px;
+     vertical-align: top;
+     display: inline-block;
+     text-align: left;  
+}
+
+.box1 p{
+	margin-left: auto;
+    margin-right:auto;
+   	margin-bottom: auto;
+    margin-top: 15px;
+}
+			
+.box2 p{
+    margin-left: auto;
+    margin-right:auto;
+	margin-bottom: auto;
+	margin-top: 20px;
+}
+			
+.box3 p{
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: auto;
+	margin-top: 20px;
+}
+
+/**car menyu dropdown*/
+.dropbtn {
+	background-color:#739d39;
+	color: ;
+	padding: 12px;
+	font-size: 16px;
+	border: none;
+	display: inline-block;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+      
+.Cartbutton {
+	background-color:#739d39;
+	color: ;
+	padding: 12px;
+	font-size: 16px;
+	border: none;
+	display: inline-block;
+}
+
+.Cart {
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+}
+/**car meny ends*/
  
 .container {
   max-width: 1200px;
@@ -130,133 +250,6 @@ html, body {
   color: #43474D;
   margin-right: 20px;
 }
- 
-.cart-btn {
-  display: inline-block;
-  background-color: #7DC855;
-  border-radius: 6px;
-  font-size: 16px;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-.cart-btn:hover {
-  background-color: #64af3d;
-}
 
-/*HEADER*/
 
-#container1 {
-  height: 80px;
-  width: 100vw;
-  text-align:center;
-  background-color: lightgreen;
-  font-size: 8pt;
- 
-}
 
-.box1 {
-  background-color: lightgreen;
-  width: 20vw;
-  height: 80px;
-  vertical-align: top;
-  display: inline-block;  
-}
-
-.box2 {
-  background-color: lightgreen;
-  width: 60vw;
-  height: 80px;
-  vertical-align: top;
-  display: inline-block;  
-}
-
- .box3 {
-  background-color: lightgreen;
-  width: 7vw;
-  height: 80px;
-  vertical-align: top;
-  display: inline-block;
-  text-align: left;
-      
-}
- .box4 {
-  background-color: lightgreen;
-  width: 12vw;
-  height: 80px;
-  vertical-align: top;
-  display: inline-block;
-  text-align: left;
-      
-}
-
- .box1 p{
-  margin-left: auto;
-  margin-right:auto;
-  margin-bottom: auto;
-  margin-top: 15px;
-}
-.box2 p{
-  margin-left: auto;
-  margin-right:auto;
-  margin-bottom: auto;
-  margin-top: 20px;
-}
- .box3 p{
-  margin-left: auto;
-  margin-right:auto;
-  margin-bottom: auto;
-  margin-top: 20px;
-}
- 
-.dropbtn {
-  background-color:lightgreen;
-  color: ;
-  padding: 12px;
-  font-size: 12px;
-  border: none;
-  display: inline-block;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
- .Cartbutton {
-  background-color:lightgreen;
-  color: ;
-  padding: 12px;
-  font-size: 12px;
-  border: none;
-  display: inline-block;
-}
-
-.Cart {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-}
