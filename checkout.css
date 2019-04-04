@@ -5,7 +5,7 @@
     text-align:center;
     background-color: #739d39;
     font-size: 8pt;
-                
+    font-family: Arial, Helvetica, sans-serif;
 }
 			
 .box1 {
@@ -108,14 +108,17 @@
 	padding: 12px;
 	font-size: 16px;
 	border: none;
-	display: inline-block;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .Cart {
 	position: relative;
 	display: inline-block;
-	margin-top: 20px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 /**cart menu ends*/
 
 .row {
@@ -124,6 +127,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .col-25 {
@@ -152,6 +156,7 @@
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 input[type=text] {
@@ -160,17 +165,20 @@ input[type=text] {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 label {
   margin-bottom: 10px;
   display: block;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn {
@@ -183,23 +191,28 @@ label {
   border-radius: 3px;
   cursor: pointer;
   font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn:hover {
   background-color: #45a049;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 span.price {
   float: right;
   color: grey;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
     flex-direction: column-reverse;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .col-25 {
     margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
