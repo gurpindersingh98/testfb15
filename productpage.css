@@ -71,7 +71,7 @@ html, body {
 	margin-top: 20px;
 }
 
-/**car menyu dropdown*/
+/**cart menu dropdown*/
 .dropbtn {
 	background-color:#739d39;
 	color: ;
@@ -124,7 +124,7 @@ html, body {
 	display: inline-block;
 	margin-top: 20px;
 }
-/**car meny ends*/
+/**cart menu ends*/
  
 .container {
   max-width: 1200px;
@@ -250,6 +250,3 @@ html, body {
   color: #43474D;
   margin-right: 20px;
 }
-
-
-

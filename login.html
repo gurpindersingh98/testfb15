@@ -7,7 +7,7 @@
 		
    body {
      font-family: 'Hind', sans-serif;
-	 background-color: #C6E377;
+	 background-color: #DCDCDC;
 	font-size: 17px;	
       }	
 	</style>
@@ -37,7 +37,7 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
   
 <!-- The surrounding HTML is left untouched by FirebaseUI.
      Your app may use that space for branding, controls and other customizations.-->
-<h1>Welcome to FoodSave App</h1>
+<h1><center>Welcome to FoodSave</center></h1>
 <div id="firebaseui-auth-container"></div>
 <div id="loader">Loading...</div>
 
@@ -74,9 +74,6 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
   privacyPolicyUrl: 'mainpage1.html'
 };
 
-  
-  
-  
 // The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);
 
