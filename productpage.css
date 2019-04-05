@@ -146,11 +146,11 @@ html, body {
 
 /* Left Column */
 .left-column img {
-  width: 100%;
+  width: 80%;
   position: absolute;
   left: 0;
   top: 0;
-  opacity: 0;
+  opacity: 1;
 }
  
 .left-column img.active {
