@@ -2,215 +2,7 @@
 <html lang = en>
 	<head>
 		<title>FoodSave Main Page</title>
-		<style>
-			/*body css*/
-			body {
-         		font-family: 'Hind', sans-serif;
-         		background-color: aliceblue;
-                font-size: 18px;
-      		}
-			/***************************header******************************/
-			#container1 {
-				height: 80px;
-        		width: 100vw;
-       			text-align:center;
-        		background-color: #739d39;
-        		font-size: 8pt;
-                
-       
-      		}
-			
-      		.box1 {
-        		background-color: #739d39;
-        		width: 20vw;
-        		height: 80px;
-        		vertical-align: top;
-       			display: inline-block;
-                
-			}
-            
-      
-      		.box2 {
-        		background-color: #739d39;
-        		width: 60vw;
-        		height: 80px;
-        		vertical-align: top;
-        		display: inline-block;  
-      		}
-      
-       		.box3 {
-        		background-color: #739d39;
-        		width: 7vw;
-        		height: 80px;
-        		vertical-align: top;
-        		display: inline-block;
-        		text-align: left;
-            
-      		}
-			
-       		.box4 {
-        		background-color: #739d39;
-        		width: 12vw;
-        		height: 80px;
-        		vertical-align: top;
-        		display: inline-block;
-        		text-align: left;  
-			}
-
-       		.box1 p{
-				margin-left: auto;
-        		margin-right:auto;
-        		margin-bottom: auto;
-        		margin-top: 15px;
-      		}
-			
-      		.box2 p{
-        		margin-left: auto;
-        		margin-right:auto;
-				margin-bottom: auto;
-				margin-top: 20px;
-			}
-			
-       		.box3 p{
-				margin-left: auto;
-				margin-right:auto;
-				margin-bottom: auto;
-				margin-top: 20px;
-			}
-       		/**********************************menu 1 ends********************/
-            
-            /************************footer***************/
-            /*container 2*/
-            #container2 { 
-                height: 100px;
-        		width: 100%;
-        		background-color: #739d39;
-        		font-size: 8pt;    
-            }
-            table, td {
-                text-align: center;
-                margin-bottom: 10px;
-                font-size: 16px;
-            }
-            table, td:hover {
-                background-color: #fcfad3;
-            }
-        
-            /**********************footer ends*****************/
-            
-			/**car menyu dropdown*/
-     		.dropbtn {
-				background-color:#739d39;
-				color: ;
-				padding: 12px;
-				font-size: 16px;
-				border: none;
-				display: inline-block;
-			}
-
-			.dropdown {
-				position: relative;
-				display: inline-block;
-				margin-top: 20px;
-			}
-
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				background-color: #f1f1f1;
-				min-width: 160px;
-				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-				z-index: 1;
-			}
-
-			.dropdown-content a {
-                font-size: 16px;
-				color: black;
-				padding: 12px 16px;
-				text-decoration: none;
-				display: block;
-			}
-
-			.dropdown-content a:hover {background-color: #ddd;}
-
-			.dropdown:hover .dropdown-content {display: block;}
-
-			.dropdown:hover .dropbtn {background-color: #3e8e41;}
-      
-			.Cartbutton {
-				background-color:#739d39;
-				color: ;
-				padding: 12px;
-				font-size: 16px;
-				border: none;
-				display: inline-block;
-			}
-
-			.Cart {
-				position: relative;
-				display: inline-block;
-				margin-top: 20px;
-			}
-			/**car meny ends*/
-			
-			/**vertical menu hover and actives*/
-			.vertical-menu{
-				width: 600px;
-				margin-top: 150px;
-				margin-left: 100px;
-				margin-right: 0px;
-				margin-bottom: 150px;
-                float: left;
-                display: inline-block;
-			}
-			.vertical-menu a{
-				background-color: #fcfad3;
-				color: black;
-				display: block;
-				padding: 12px;
-				text-decoration: none;
-				text-align: center;
-			}
-			.vertical-menu a:hover {
-				background-color: #ccc;
-			}
-			.vertical-menu a.active {
-				background-color: #c6e377;
-				color: white;
-			}
-			/**vertical menu css ends------------*/
-			
-            /**vertical menu 2 hover and actives*/
-			.vertical-menu2{
-				width: 600px;
-				margin-top: 150px;
-				margin-left: auto;
-				margin-right: 100px;
-				margin-bottom: 150px;
-                
-                
-			}
-			.vertical-menu2 a{
-				background-color: #fcfad3;
-				color: black;
-				display: block;
-				padding: 12px;
-				text-decoration: none;
-				text-align: center;
-			}
-			.vertical-menu2 a:hover {
-				background-color: #ccc;
-			}
-			.vertical-menu2 a.active {
-				background-color: #c6e377;
-				color: white;
-			}
-			/**vertical menu 2 css ends------------*/
-			
-	
-			
-		
-		</style>
+		<link rel="stylesheet" type="text/css" href="mainpage.css" />
 	</head>
 	<body>
 		<!------------------------------------------Container 1 menu------------------------------->
@@ -245,7 +37,7 @@
 			<!------------------------box4--------------------->
       		<div class="box4">
         		<div class="Cart">
-					<button class="Cartbutton">Cart</button>
+					<a class="Cartbutton" href = "cartpage.html">Cart</a>
         		</div>
       		</div>
    		</div>
@@ -259,35 +51,94 @@
     	</script>
 		<!---------------------------------------------Javascript ends--------------------------->
 	  	
-		<!---------------------------------------------main menu 1------------------------------->
-		<div class="vertical-menu">
-  			<a href="#" class="active">Popular</a>
-  			<a href="#">Apples </a>
-  			<a href="#">Avocados</a>
-  			<a href="#">Bananas</a>
-  			<a href="#">Watermelons</a>
+		<!---------------------------------------------on going sales------------------------------->
+		<div id="sale">Ongoing Sales</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="apple.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Apples(Organic)</a>
+			</div>
 		</div>
-		<!-----------------------------------------menu ends here--------------------------------->
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="banana.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Banana(Argentina)</a>
+			</div>
+		</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="avocaod.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Avocado(Local)</a>
+			</div>
+		</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="POTATOES.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Potatoes(5LB)</a>
+			</div>
+		</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="onion.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Oninons (10LB)</a>
+			</div>
+		</div>
 		
-        <!-----------------------------------------main menu 2 here------------------------------->
-        <div class="vertical-menu2">
-  			<a href="#" class="active">Sales</a>
-  			<a href="#">Jasmine Rice</a>
-  			<a href="#">Potatoes</a>
-  			<a href="#">Organic Milk</a>
-  			<a href="#">Eggplants</a>
+		<!-----------------------------------------exotic foods--------------------------------->
+		<div id="sale">Exotic Foods</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="tdurian1.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Durian(Large)</a>
+			</div>
 		</div>
-        <!-----------------------------------------main menu 2 ends here-------------------------->
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="rama.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Rambutan</a>
+			</div>
+		</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="salak.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Salak(Iran)</a>
+			</div>
+		</div>
+		<div id="container" style="white-space:nowrap">
+			<div id="image" style="display:inline;">
+				<img height="5%" width="5%" src="papaya.png"/>
+			</div>
+			<div id="texts" style="display:inline"> 
+				<a href ="productpage.html">Papaya</a>
+			</div>
+		</div>
+		
 		<!-----------------------------------------footer table----------------------------------->
 		<table align = "center" id = "container2">
 			<tr>
-				<td href="about us">About Us</td>
+				<td href="about us">About us</td>
 			</tr>
 			<tr>
-				<td href = "how it works">How it Works</td>
+				<td href = "how it works">How it works</td>
 			</tr>
 			<tr>
-				<td href = "contact us">Contact Us</td>			
+				<td href = "contact us">Contact us</td>			
 			</tr>
 		</table>
 		<!------------------------------------footer table ends here------------------------------>
