@@ -3,6 +3,7 @@ body {
     background-color: aliceblue;
     font-size: 18px;
 }
+/*the top bar*/
 #container1 {
 	height: 80px;
     width: 100vw;
@@ -10,7 +11,8 @@ body {
     background-color: #739d39;
     font-size: 8pt;
 }
-			
+
+
 .box1 {
 	background-color: #739d39;
 	width: 20vw;
@@ -65,7 +67,8 @@ body {
 	margin-bottom: auto;
 	margin-top: 20px;
 }
-       		
+
+/* footer*/
  #container2 { 
     height: 100px;
     width: 100%;
@@ -73,6 +76,7 @@ body {
     font-size: 8pt;    
 	margin-top:50px;
 }
+
 table, td {
    text-align: center;
    margin-bottom: 10px;
@@ -82,7 +86,8 @@ table, td {
 table, td:hover {
    background-color: #fcfad3;
 }
-         
+ 
+/*drop down menu*/
 .dropbtn {
 	background-color:#739d39;
 	color: ;
@@ -120,7 +125,8 @@ table, td:hover {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-      
+ 
+/*button for the cart*/
 .Cartbutton {
 	background-color:#739d39;
 	color: ;
@@ -155,13 +161,15 @@ table, td:hover {
 	background-color: #c6e377;
 			
 }
+/**the main menu "on sale"*/
 #sale{
 	font-size:40px;
 	text-align: center;
 	margin-top: 20px;	
 	margin-bottom: 10px;
 }
-			
+
+/* the images in the face menu*/
 #image1{
 	width: 10%;
 	height: 10%;
