@@ -135,6 +135,7 @@ html, body {
 
 /* Columns */
 .left-column {
+  margin-top: 100px;
   width: 50%;
   position: relative;
 }

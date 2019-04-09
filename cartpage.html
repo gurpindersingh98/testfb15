@@ -5,6 +5,21 @@
     <meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    	 <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDbL92JRSdB3V1OT7-iMFYytHbxq-7cs3s",
+    authDomain: "hannahproject-9a1b1.firebaseapp.com",
+    databaseURL: "https://hannahproject-9a1b1.firebaseio.com",
+    projectId: "hannahproject-9a1b1",
+    storageBucket: "hannahproject-9a1b1.appspot.com",
+    messagingSenderId: "973464007710"
+  };
+  firebase.initializeApp(config);
+</script>
+ 
     <style>
       @import url(https://fonts.googleapis.com/css?family=Hind);
 		
@@ -52,47 +67,12 @@
 		  grid-column-start: 1;
 		  grid-column-end: 3;
 		}
-		#item8 {
-		  grid-column-start: 5;
+      #cart1 {
+          grid-column-start: 3;
 		  grid-column-end: 7;
-		  background-color: #FBFAD3;
-		  text-align: center;
 		}
-		.item9 {
-		  grid-column-start: 1;
-		  grid-column-end: 5;
-		}
-		#item10 {
-		  grid-column-start: 5;
-		  grid-column-end: 7;
-		  background-color: #FBFAD3;
-		  text-align: center;
-		}
-		#item15 {
-		  grid-column-start: 5;
-		  grid-column-end: 7;
-		  background-color: #FBFAD3;
-		  text-align: center;
-		}
-		#item20 {
-		  grid-column-start: 5;
-		  grid-column-end: 7;
-		  grid-row-start: 5;
-		  grid-row-end: 10;
-		  background-color: #FBFAD3;
-		  text-align: center;
-		}
-		.item21 {
-		  grid-column-start: 1;
-		  grid-column-end: 5;
-		}
-		#item30 {
-		  grid-column-start: 1;
-		  grid-column-end: 7;
-		  background-color: #36622B;
-		  text-align: center;
-		}
-		
+      
+      
 		 .dropbtn {
         background-color:#729D39;
         padding: px;
@@ -199,57 +179,18 @@
        <button class="Cartbutton">Cart</button>
   </div>
 
+  </div> 
+  <div class ="item 5">
+    <p> Store</p>
+    <p> Item Name</p>
+    <p> Price</p>
+    <p> Quantity</p>
+    <p> Subtotal</p>
   </div>
-  <div class="item5">Shopping Cart</div>
-  <div class="item6">Price</div>
-  <div class="item7">Quantity</div>
-  <div id="item8">Subtotal</div> 
-  <div class="item9">Costco</div>
-  <div id="item10">$45</div>
-  <div class="item11">
-  	 <img id ="image1" src="Screenshot_2.png" alt="" >
-  </div>  
-  <div class="item12">Apples</div>
-  <div class="item13">$4</div>
-  <div class="item14">3</div>
-  <div id="item15">
- </div>
-  <div class="item16">
-	 <img id ="image2" src="Screenshot_3.png" alt="" >
-  </div>
-  <div class="item17">Tomatoes</div>
-  <div class="item18">$4</div> 
-  <div class="item19">4</div>
-  <div id="item20">
-	 <div class="Cart">
-       <button class="Cartbutton">Checkout</button>
-	  </div>
-		</div>
-  <div class="item21">Walmart</div>
-  <div class="item22">
-	<img id ="image1" src="Screenshot_4.png" alt="" >
-  </div>  
-  <div class="item23">Lettuce</div>
-  <div class="item24">$3</div>
-  <div class="item25">2</div>
-  <div class="item26">
-	<img id ="image1" src="Screenshot_5.png" alt="" >
-	</div>
-  <div class="item27">Grape</div>
-  <div class="item28">$5.5</div>
-  <div class="item29">2</div>
-  <div id="item30">
-    <div class="footer">
-       <button class="footer">About Us</button>
-    </div>
-	<div class="footer">
-       <button class="footer">How it Works</button>
-    </div>
-	 <div class="footer">
-       <button class="footer">Contact</button>
-    </div> 
-  </div>
-</div>
+  
+  <div id="cart1">Shopping Cart</div>
+
+   
 
  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -259,6 +200,45 @@
   document.getElementById('search').style.width="400px";
   document.getElementById('search').style.fontSize="14pt";
 </script>
- 
+   
+   
+    
+
+    
+
+    <script>
+		document.getElementById("cart1").addEventListener("click",function() {
+			ShowList("cart1");
+		}
+	 );
+		function ShowList(category) {
+			var dbRef = firebase.database().ref("cart/"+category);
+			var promise = dbRef.once("value", function(snap){
+			list=snap.val();
+		})
+		
+		
+		promise.then(function(){
+			DisplayList(list); //Json object	 
+					 });
+		};
+		function DisplayList(list){
+			console.log(list);
+			for(var x in list){
+			var para = document.createElement("p");
+			document.body.appendChild(para);
+			var node = document.createTextNode(x);
+			para.appendChild(node);
+		}
+				
+		}
+		;
+													 
+    </script>
+		
+  <script src="setup_firebase_hannah.js"></script>
+  <script src="create_user.js"></script>
+      
+
   </body>
 </html>
