@@ -67,10 +67,11 @@
 				out2.innerText = snap.val()['Price']
 				});
 
-				function writeUserData(cartID, name, price) {
+				function writeUserData(cartID, name, price, retailer) {
 					firebase.database().ref('Cart/CartID/' + cartID).set({
 						Product: name,
-						Price: price
+						Price: price,
+						Retailer: retailer
 					});
 				}
     	</script>
@@ -107,7 +108,7 @@
               </div>
 							
 							<div class="atc">
-							<button id="atcaction" onclick="writeUserData('cart02', 'Gala Apple', '$1')">Add to Cart</button>
+							<button id="atcaction" onclick="writeUserData('cart01', 'Gala Apple', '$1', 'Costco')">Add to Cart</button>
 							</div>
 
               <a href="#">What does the green label mean?</a>
