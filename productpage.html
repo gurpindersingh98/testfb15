@@ -35,7 +35,7 @@
 					<button class="dropbtn">Account</button>
 					<div class="dropdown-content">
 						<a href="#">My account</a>
-						<a href="#">Location</a>
+						<a href="location.html">Location</a>
 						<a href="#">Setting</a>
                         <a href="#">Logout</a>
 					</div>     
@@ -44,7 +44,7 @@
 			<!------------------------box4--------------------->
       		<div class="box4">
         		<div class="Cart">
-					<button class="Cartbutton">Cart</button>
+					<button class="Cartbutton" onclick="window.location.href ='cartpage.html'">Cart</button>
         		</div>
       		</div>
    		</div>
@@ -67,11 +67,8 @@
 				out2.innerText = snap.val()['Price']
 				});
 
-				function writeUserData(cartID, name, price) {
-					firebase.database().ref('Cart/CartID/' + cartID).set({
-						Product: name,
-						Price: price
-					});
+				function myFunction() {
+				document.getElementById("atcaction").innerHTML = "YOU CLICKED ME!";
 				}
     	</script>
 		<!---------------------------------------------Javascript ends--------------------------->	
@@ -82,7 +79,7 @@
 
         <!-- Left Column / Product Image -->
         <div class="left-column">
-          <img data-image="black" src="imagestore/rice.jfif" alt="">
+          <img data-image="black" src="imagestore/gala_apple.png" alt="">
         </div>
         
         <!-- Right Column -->
@@ -107,7 +104,7 @@
               </div>
 							
 							<div class="atc">
-							<button id="atcaction" onclick="writeUserData('cart02', 'Gala Apple', '$1')">Add to Cart</button>
+							<button id="atcaction" onclick="myFunction()">Add to Cart</button>
 							</div>
 
               <a href="#">What does the green label mean?</a>

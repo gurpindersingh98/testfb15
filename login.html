@@ -58,7 +58,7 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
   },
   // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
   signInFlow: 'popup',
-  signInSuccessUrl: 'cartpagetest_v2.html',
+  signInSuccessUrl: 'mainpage.html',
   signInOptions: [
     // Leave the lines as is for the providers you want to offer your users.
     //firebase.auth.GoogleAuthProvider.PROVIDER_ID,
@@ -69,9 +69,9 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
     //firebase.auth.PhoneAuthProvider.PROVIDER_ID
   ],
   // Terms of service url.
-  tosUrl: 'mainpage1.html',
+  tosUrl: 'mainpage.html',
   // Privacy policy url.
-  privacyPolicyUrl: 'mainpage1.html'
+  privacyPolicyUrl: 'mainpage.html'
 };
 
   
