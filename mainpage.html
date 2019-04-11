@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang = en>
-	<head>
-		<title>FoodSave Main Page</title>
-		<link rel="stylesheet" type="text/css" href="mainpage.css" />
-	</head>
-	<body>
-		<!--the top horizontal bar-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel = "stylesheet"
+            type = "text/css"
+            href = "mainpage.css" />
+    </head>
+
+    <body>
+        <div id="pageWrap">
+    	<!------------------------------------------Container 1 menu------------------------------->
 		<div id="container1">
-			<!-----box1------->
+			<!-----------------box1------------------->
      		<div class="box1">
        			<p>
-        			<img alt="Foodsave" src="imagestore/Screenshot_28.png" width="25%" height="25%"/>  
+        			<img alt="Foodsave" src="imagestore/screenshot_28.png" width="25%" height="25%"/>  
        			</p>
 			</div> 
 			
-			<!------box2---->
+			<!---------------------box2---------------->
 			<div class="box2">      
 				<p>
 					<form action="/action_page.php">
@@ -22,128 +25,79 @@
 					</form>
 			</div>
 			
-			<!---------box3-------->
+			<!---------------------------box3------------->
       		<div class="box3">
 				<div class="dropdown">
 					<button class="dropbtn">Account</button>
 					<div class="dropdown-content">
 						<a href="#">My account</a>
-						<a href="location2.html">Location</a>
-						<a href="#">Setting</a>
+						<a href="location.html">Location</a>
+						<a href="#">Settings</a>
                         <a href="#">Logout</a>
 					</div>     
         		</div>
       		</div>
-			<!----------box4---------->
+			<!------------------------box4--------------------->
       		<div class="box4">
         		<div class="Cart">
-					<a class="Cartbutton" href = "cartpage.html">Cart</a>
+					<button class="Cartbutton" onclick="window.location.href ='cartpage.html'">Cart</button>
         		</div>
       		</div>
    		</div>
-		<!-----------Container 1 menu ends---------->
-		
-		<!-----------Javascript starts---------->
-   		<script>
-			document.getElementById('search').style.height="35px";
-     		document.getElementById('search').style.width="350px";
-     		document.getElementById('search').style.fontSize="14pt";
-    	</script>
-		<!----------Javascript ends------------->
-	  	
-		<!-------------on going sales------------->
-		<div id="sale">Ongoing Sales</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/apple.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Apples(Organic)</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/banana.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Banana(Argentina)</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/avocaod.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Avocado(Local)</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/POTATOES.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Potatoes(5LB)</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/onion.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Onions (10LB)</a>
-			</div>
-		</div>
-		
-		<!---------------exotic foods------------->
-		<div id="sale">Exotic Foods</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/tdurian1.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Durian(Large)</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/rama.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Rambutan</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/salak.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Salak(Iran)</a>
-			</div>
-		</div>
-		<div id="container" style="white-space:nowrap">
-			<div id="image" style="display:inline;">
-				<img height="5%" width="5%" src="imagestore/papaya.png"/>
-			</div>
-			<div id="texts" style="display:inline"> 
-				<a href ="productpage.html">Papaya</a>
-			</div>
-		</div>
-		
-		<!--------------footer table----------->
-		<table align = "center" id = "container2">
-			<tr>
-				<td href="about us">About us</td>
-			</tr>
-			<tr>
-				<td href = "how it works">How it works</td>
-			</tr>
-			<tr>
-				<td href = "contact us">Contact us</td>			
-			</tr>
-		</table>
-		<!------------footer table ends here---------->
-		
-		<script src="create_user.js"></script>
-		
-	</body>
+		<!---------------------------------------------Container 1 menu ends----------------------->
+            
+            <div id="welcomeTitle">Welcome to Foodsave, John Doe.</div>
+            
+            <div id="productsOnSale">
+                
+                <!-- Ongoing sales listings -->
+                <div id="typeOfProducTxt">Ongoing Sales</div>
+                <div class="salesRow">
+                    <div class="salesListing">
+                        <div class="listingText">Apples</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/gala_apple.jpg" width="200" height="200"/></a>
+                    </div>
+                    
+                    <div class="salesListing">
+                        <div class="listingText">Bananas</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/banana.png" width="200" height="200"/></a>
+                    </div>
+                
+                    <div class="salesListing">
+                        <div class="listingText">Durian</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/durian.jpg" width="200" height="200"/></a>
+                    </div>
+                    
+                    <div class="salesListing">
+                        <div class="listingText">Oranges</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/oranges.jpg" width="200" height="200"/></a>
+                    </div>
+                </div>
+            
+                <div id="typeOfProducTxt">Recently Purchased Items</div>
+                <div class="salesRow">
+                    <div class="salesListing">
+                        <div class="listingText">Avocados</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/avocaod.png" width="200" height="200"/></a>
+                    </div>
+                    
+                    <div class="salesListing">
+                        <div class="listingText">Grapes</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/grapes.jpg" width="200" height="200"/></a>
+                    </div>
+                
+                    <div class="salesListing">
+                        <div class="listingText">Mangoes</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/mangoes.jpg" width="200" height="200"/></a>
+                    </div>
+                    
+                    <div class="salesListing">
+                        <div class="listingText">Rice</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/rice.jpg" width="200" height="200"/></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
