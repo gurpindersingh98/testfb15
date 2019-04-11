@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="checkout.css" />
     <title>Checkout</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="javascripts/setup_firebase_wilson.js"></script>
   </head>
 
   <body>
@@ -113,20 +116,39 @@
         </div>
       </div>
 
+      <script>
+				document.getElementById('search').style.height="35px";
+				document.getElementById('search').style.width="350px";
+				document.getElementById('search').style.fontSize="14pt";
+
+				var db = firebase.database().ref('Cart/CartID/cart01');
+				db.on("value", snap => {
+				
+				var out = document.getElementById("item1");
+				console.log(snap.val())
+        out.innerText = snap.val()['Product']
+        
+        var out = document.getElementById("item2");
+				console.log(snap.val())
+				out.innerText = snap.val()['Product']
+				
+				var out2 = document.getElementById("price");
+				out2.innerText = snap.val()['Price']
+				});
+    	</script>
+
       <div class="col-25">
         <div class="container">
           <h4>Cart 
             <span class="price" style="color:black">
               <i class="fa fa-shopping-cart"></i> 
-              <b>4</b>
+              <b>2</b>
             </span>
           </h4>
-          <p><a href="#">Apples</a> <span class="price">$10</span></p>
-          <p><a href="#">Tomato</a> <span class="price">$20</span></p>
-          <p><a href="#">Lettuce</a> <span class="price">$13</span></p>
-          <p><a href="#">Grapes</a> <span class="price">$16</span></p>
+          <p id = "item1"></a> <span class="price">3</span></p>
+          <p id = "item2"></a> <span class="price">3</span></p>
           <hr>
-          <p>Total <span class="price" style="color:black"><b>$270</b></span></p>
+          <p>Total <span class="price" style="color:black"><b>$27</b></span></p>
         </div>
       </div>
     </div>
