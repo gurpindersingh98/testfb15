@@ -8,56 +8,92 @@
 
     <body>
         <div id="pageWrap">
-            <div id="header"></div>
+    	<!------------------------------------------Container 1 menu------------------------------->
+		<div id="container1">
+			<!-----------------box1------------------->
+     		<div class="box1">
+       			<p>
+        			<img alt="Foodsave" src="imagestore/screenshot_28.png" width="25%" height="25%"/>  
+       			</p>
+			</div> 
+			
+			<!---------------------box2---------------->
+			<div class="box2">      
+				<p>
+					<form action="/action_page.php">
+						<input type="search" id="search" name="name" placeholder="Search" autofocus="autofocus"/>
+					</form>
+			</div>
+			
+			<!---------------------------box3------------->
+      		<div class="box3">
+				<div class="dropdown">
+					<button class="dropbtn">Account</button>
+					<div class="dropdown-content">
+						<a href="#">My account</a>
+						<a href="location.html">Location</a>
+						<a href="#">Settings</a>
+                        <a href="#">Logout</a>
+					</div>     
+        		</div>
+      		</div>
+			<!------------------------box4--------------------->
+      		<div class="box4">
+        		<div class="Cart">
+					<button class="Cartbutton" onclick="window.location.href ='cartpage.html'">Cart</button>
+        		</div>
+      		</div>
+   		</div>
+		<!---------------------------------------------Container 1 menu ends----------------------->
             
-            <div id="welcomeTitle">WELCOME</div>
+            <div id="welcomeTitle">Welcome to Foodsave, John Doe.</div>
             
             <div id="productsOnSale">
                 
                 <!-- Ongoing sales listings -->
-                <div id="typeOfProducTxt">ONGOING SALES</div>
+                <div id="typeOfProducTxt">Ongoing Sales</div>
                 <div class="salesRow">
                     <div class="salesListing">
-                        <div class="listingText">Apple</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Apples</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                     
                     <div class="salesListing">
-                        <div class="listingText">Orange</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Bananas</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                 
                     <div class="salesListing">
-                        <div class="listingText">Pear</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Oranges</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                     
                     <div class="salesListing">
-                        <div class="listingText">Lychee</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Pears</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                 </div>
             
-                <div id="typeOfProducTxt">RECENTLY PURCHASED ITEMS</div>
+                <div id="typeOfProducTxt">Recently Purchased Items</div>
                 <div class="salesRow">
                     <div class="salesListing">
-                        <div class="listingText">Apple</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Avocados</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                     
                     <div class="salesListing">
-                        <div class="listingText">Orange</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Grapes</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                 
                     <div class="salesListing">
-                        <div class="listingText">Pear</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Mangoes</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                     
                     <div class="salesListing">
-                        <div class="listingText">Lychee</div>
-                        <img class="listingPic" src="imagestore/dummyImg.png"/>
+                        <div class="listingText">Rice</div>
+                        <a href ="productpage.html"><img class="listingPic" src="imagestore/dummyImg.png"/></a>
                     </div>
                 </div>
                 </div>
